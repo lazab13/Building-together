@@ -1,0 +1,87 @@
+.main-header {
+  position: relative;
+  padding: 5px 9px;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 9px 40px;
+    background-color: #323233;
+  }
+}
+
+.main-header__link {
+  position: absolute;
+  top: 5px;
+  left: 42vw;
+
+  @media (min-width: $desctop-width) {
+    position: static;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: $desctop-width) {
+    width: 74px;
+    height: 39px;
+  }
+}
+
+.main-header__phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 85px;
+
+  @media (min-width: $desctop-width) {
+    order: 1;
+    margin: 0;
+    width: auto;
+  }
+}
+
+.main-header__phone {
+  text-decoration: none;
+  color: $color-link;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 15px;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 115px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 20px;
+      color: #979799;
+      width: 112px;
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.main-header__phone--spb {
+  @media (min-width: $desctop-width) {
+    &::after {
+      content: "Санкт-Петербург:";
+    }
+  }
+}
+
+.main-header__phone--moscow {
+  @media (min-width: $desctop-width) {
+    &::after {
+      content: "Москва:";
+      text-align: right;
+    }
+  }
+}

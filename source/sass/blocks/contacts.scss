@@ -1,0 +1,168 @@
+.contacts {
+  padding: 26px 23px 32px;
+
+  @media (min-width: $desctop-width) {
+    width: 38.75vw;
+    padding: 0;
+  }
+}
+
+.contacts__title {
+  font-size: 20px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 26px;
+    line-height: 64px;
+    text-align: left;
+    color: #999999;
+    margin-bottom: 17px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 41px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 43px;
+  }
+}
+
+.contacts__link--city {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text-another;
+  padding: 0 10px;
+  border: 3px solid #999999;
+  border-radius: 5px;
+  width: 41.7vw;
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: 39px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 18.7vw;
+  }
+
+  &:hover {
+    color: #212121;
+    background-color: #999999;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px #ffffff inset;
+  }
+}
+
+.contacts__link--current {
+  color: #212121;
+  background-color: #999999;
+}
+
+.contacts__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 46px;
+
+  @media (min-width: $desctop-width) {
+    gap: 22px;
+    margin-bottom: 43px;
+  }
+}
+
+.contacts__link-info {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  text-decoration: none;
+  color: $color-link;
+  padding-left: 42px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 0.5px solid #21a038;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 13px;
+    line-height: 25px;
+    padding-left: 43px;
+  }
+}
+
+.contacts__link-info--phone::after {
+  background-image: url("../img/phone-icon.svg");
+  width: 17px;
+  height: 13.3px;
+  top: 9px;
+  left: 7.5px;
+}
+
+.contacts__link-info--email::after {
+  background-image: url("../img/email-icon.svg");
+  width: 17px;
+  height: 10px;
+  top: 10px;
+  left: 7.5px;
+}
+
+.contacts__link-info--address {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::before {
+    @media (min-width: $desctop-width) {
+      top: 8px;
+    }
+  }
+
+  &::after {
+    background-image: url("../img/marcer-icon.svg");
+    width: 19px;
+    height: 17px;
+    top: 7.5px;
+    left: 6.5px;
+
+    @media (min-width: $desctop-width) {
+      top: 15.5px;
+    }
+  }
+}

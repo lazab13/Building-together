@@ -1,0 +1,96 @@
+.promo-company {
+  padding: 45px 20px;
+  background-color: $backgroud-color-another;
+
+  @media (min-width: $desctop-width) {
+    padding: 70px 263px 32px;
+  }
+}
+
+.promo-company__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-another;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.promo-company__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 61px;
+  }
+}
+
+.promo-company__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  @media (min-width: $desctop-width) {
+    gap: 32px;
+  }
+}
+
+.promo-company__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 70px;
+  background-color: #000000b3;
+  border: 1px solid #b6ffba;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 #00000080, 0 0 10px 0 #b6ffba;
+
+  @media (min-width: $desctop-width) {
+    width: 100px;
+    height: 80px;
+  }
+}
+
+.promo-company__meta--another {
+  @media (min-width: $desctop-width) {
+    position: relative;
+    top: 10px;
+  }
+}
+
+.promo-company__meta-description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: $color-green;
+
+  @media (min-width: $desctop-width) {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+.promo-company__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,72 @@
+.button-section {
+  font-family: $gothampro;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: $color-text;
+  background-color: $btn-bg-color;
+  padding: 10px 36px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $btn-bg-color-active;
+    border-color: $btn-bg-color-active;
+  }
+
+  &:active {
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  @media (min-width: $desctop-width) {
+    font-size: 19px;
+    padding: 20px 40px;
+  }
+}
+
+.button-list {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: $color-green;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  @media (min-width: $desctop-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 11px;
+
+    @media (min-width: $desctop-width) {
+      width: 4px;
+      height: 24px;
+      top: 7px;
+      left: 18px;
+    }
+  }
+
+  &::after {
+    rotate: 90deg;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,75 @@
+.products-company {
+  padding: 45px 0;
+  padding-bottom: 34px;
+  background-color: $backgroud-color-another;
+
+  @media (min-width: $desctop-width) {
+    padding: 70px 0;
+    padding-bottom: 66px;
+  }
+}
+
+.products-company__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text-another;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+}
+
+.products-company__wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 221px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    gap: 20px;
+    width: 38.8vw;
+    margin-bottom: 63px;
+  }
+}
+
+.products-company__link {
+  display: block;
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-text-another;
+  padding: 0 16px;
+  border: 3px solid #999999;
+  border-radius: 5px;
+  transition: all 0.2s;
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 30px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    color: #212121;
+    background-color: #999999;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.products-company__link--current {
+  color: #212121;
+  background-color: #999999;
+}

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Building together. Станьте частью нашей команды">
+  <title>Building together</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/gothampro400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gothampro700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+</head>
+
+<body class="page__body">
+
+  <header class="main-header main-header--nojs">
+    <a class="main-header__link" href="#">
+      <img class="main-header__logo" src="img/logo-company.svg" width="59" height="30"
+        alt="Логотип Пестовский лесокомбинат.">
+    </a>
+
+    <div class="main-header__phone-wrapper">
+      <a class="main-header__phone main-header__phone--spb" href="tel:88888888888" title="Санкт-Петербург.">
+        8 (888) 888-88-88
+      </a>
+
+      <a class="main-header__phone main-header__phone--moscow" href="tel:88888888888" title="Москва.">
+        8 (888) 888-88-88
+      </a>
+    </div>
+
+    <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button" title="Открыть меню">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current" href="#">
+              Главная
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="#" target="_blank">
+              Дома
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="#" target="_blank">
+              Бани
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <section class="promo">
+      <h1 class="promo__title">
+        «Building together»
+      </h1>
+
+      <p class="promo__text">
+        Cтань частью нашей команды!
+      </p>
+
+      <button class="promo__button button-section promo__button--opened-form" type="button">
+        Отправить анкету
+      </button>
+    </section>
+
+    <section class="form form--closed">
+      <div class="form__box">
+        <h1 class="form__title">
+          Заполните анкету
+        </h1>
+
+        <button class="form__toogle" type="button" title="Закрыть окно">
+          <span class="visually-hidden">
+            Закрыть окно
+          </span>
+        </button>
+
+        <form class="form__user-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="form__user-input">
+            <h2 class="visually-hidden">
+              Данные кондидата
+            </h2>
+
+            <input class="form__user-name" type="text" id="user-name" name="user-name" placeholder="Ф.И.О" required>
+
+            <input class="form__user-phone" type="tel" id="user-phone" name="user-phone" placeholder="Телефон" required>
+          </fieldset>
+
+          <div class="form__select-box">
+            <label class="form__select-label" for="select">
+              Отклик на вакансию
+            </label>
+
+            <select class="form__select-vacancy" name="select" id="select">
+              <option class="form__vacancy" value="">
+                Выберите вакансию
+              </option>
+
+              <option class="form__vacancy" value="foreman">
+                Прораб
+              </option>
+
+              <option class="form__vacancy" value="supply chain">
+                Специалист службы снабжения
+              </option>
+
+              <option class="form__vacancy" value="logistician">
+                Логист
+              </option>
+
+              <option class="form__vacancy" value="designer">
+                Проектировщик
+              </option>
+            </select>
+          </div>
+
+          <div class="form__resume">
+            <h2 class="form__resume-title">
+              Ваше резюме
+            </h2>
+
+            <p class="form__resume-text">
+              Есть резюме в формате .pdf или .doc?
+              Приложите и отправьте его нам.
+            </p>
+
+            <label class="form__resume-label" for="resume-file">
+              Загрузить файл
+            </label>
+
+            <input class="form__resume-button visually-hidden" type="file" id="resume-file" name="resume-file">
+          </div>
+
+          <div class="form__poltics">
+            <label class="form__politics-label" for="privacy-politics">
+              <input class="form__politics-input visually-hidden" type="checkbox" id="privacy-politics"
+                name="privacy-politics" value="privacy-politics" required>
+
+              <span class="form__politics-text">
+                Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой конфиденциальности, Согласием на обработку
+                персональных данных физическим лицом. Я осознаю, что даю Согласие на обработку персональных данных
+                для использования предоставляемых возможностей Веб-сервиса.
+              </span>
+
+              <span class="form__politics-user-age">
+                Я достиг(ла) 18-летнего возраста
+              </span>
+            </label>
+          </div>
+
+          <button class="form__button button-section form__button--popover-opened" type="submit">
+            Отправить анкету
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="popover popover--closed">
+      <div class="popover__box">
+        <h2 class="popover__title">
+          Анкета отправлена
+        </h2>
+
+        <div class="popover__circle"></div>
+
+        <div class="popover__wrapper">
+          <p class="popover__text">
+            Благодарим<br> за ваш отклик и интерес.
+          </p>
+
+          <p class="popover__text">
+            Мы изучим вашу анкету и свяжемся с вами<br> в течении 2х дней.
+          </p>
+        </div>
+
+        <button class="popover__button button-section">
+          Закрыть
+        </button>
+      </div>
+    </div>
+
+    <section class="promo-company">
+      <h1 class="promo-company__title">
+        О компании
+      </h1>
+
+      <ul class="promo-company__list">
+        <li class="promo-company__item">
+          <div class="promo-company__meta promo-company__meta--another">
+            <span class="promo-company__meta-description">
+              2
+            </span>
+          </div>
+
+          <p class="promo-company__text">
+            Города присутствия:<br> Санкт-Петербург и Москва
+          </p>
+        </li>
+
+        <li class="promo-company__item">
+          <div class="promo-company__meta">
+            <span class="promo-company__meta-description">
+              >30
+            </span>
+          </div>
+
+          <p class="promo-company__text">
+            Лет среди лидеров рынка
+          </p>
+        </li>
+
+        <li class="promo-company__item">
+          <div class="promo-company__meta">
+            <span class="promo-company__meta-description">
+              100
+            </span>
+          </div>
+
+          <p class="promo-company__text">
+            Домов и бань сдаём ежегодно
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="job">
+      <h1 class="job__title">
+        Выбери подразделение:
+      </h1>
+
+      <nav class="job__nav">
+        <ul class="job__department-list">
+          <li class="job__department-item">
+            <a class="job__department-link job__department-link--current" href="#">
+              Строительный отдел
+            </a>
+          </li>
+
+          <li class="job__department-item a">
+            <a class="job__department-link" href="#">
+              Офис
+            </a>
+          </li>
+
+          <li class="job__department-item b">
+            <a class="job__department-link" href="#">
+              Финансовый отдел
+            </a>
+          </li>
+
+          <li class="job__department-item c">
+            <a class="job__department-link" href="#">
+              Отдел продаж
+            </a>
+          </li>
+
+          <li class="job__department-item d">
+            <a class="job__department-link" href="#">
+              Внештатный сотрудник
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="job__list job__list--construction">
+        <li class="job__item profession">
+          <div class="profession__wrapper">
+            <h2 class="profession__title">
+              Прораб
+            </h2>
+
+            <span class="profession__salary">
+              от 00 000 руб
+            </span>
+          </div>
+
+          <button class="profession__button button-list" type="button" title=" Открыть описание профессии">
+            <span class="visually-hidden">
+              Открыть описание профессии
+            </span>
+          </button>
+
+          <div class="profession__tasks">
+            <span class="profession__tasks-title">
+              Задачи:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Наши ожидания:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Мы предлагаем:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  график 5/2 с гибким началом рабочего дня;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  ежеквартальную премию по итогам работы;
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job__item profession">
+          <div class="profession__wrapper">
+            <h2 class="profession__title">
+              Специалист службы снабжения
+            </h2>
+
+            <span class="profession__salary">
+              от 00 000 руб
+            </span>
+          </div>
+
+          <button class="profession__button profession__button--another button-list" type="button"
+            title="Открыть описание профессии">
+            <span class="visually-hidden">
+              Открыть описание профессии
+            </span>
+          </button>
+
+          <div class="profession__tasks">
+            <span class="profession__tasks-title">
+              Задачи:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Наши ожидания:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Мы предлагаем:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  график 5/2 с гибким началом рабочего дня;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  ежеквартальную премию по итогам работы;
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job__item profession">
+          <div class="profession__wrapper">
+            <h2 class="profession__title">
+              Логист
+            </h2>
+
+            <span class="profession__salary profession__salary--logist">
+              Обсуждается<br> на собеседовании
+            </span>
+          </div>
+
+          <button class="profession__button profession__button--another button-list" type="button"
+            title=" Открыть описание профессии">
+            <span class="visually-hidden">
+              Открыть описание профессии
+            </span>
+          </button>
+
+          <div class="profession__tasks">
+            <span class="profession__tasks-title">
+              Задачи:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Наши ожидания:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Мы предлагаем:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  график 5/2 с гибким началом рабочего дня;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  ежеквартальную премию по итогам работы;
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job__item profession">
+          <div class="profession__wrapper">
+            <h2 class="profession__title">
+              Проектировщик
+            </h2>
+
+            <span class="profession__salary">
+              от 00 000 руб
+            </span>
+          </div>
+
+          <button class="profession__button button-list" type="button" title=" Открыть описание профессии">
+            <span class="visually-hidden">
+              Открыть описание профессии
+            </span>
+          </button>
+
+          <div class="profession__tasks">
+            <span class="profession__tasks-title">
+              Задачи:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Наши ожидания:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  описание
+                </span>
+              </li>
+            </ul>
+
+            <span class="profession__tasks-title">
+              Мы предлагаем:
+            </span>
+
+            <ul class="profession__tasks-list">
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  график 5/2 с гибким началом рабочего дня;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;
+                </span>
+              </li>
+
+              <li class="profession__tasks-item">
+                <span class="profession__tasks-text">
+                  ежеквартальную премию по итогам работы;
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <button class="job__button button-section" type="button">
+        Откликнуться на вакансию
+      </button>
+    </section>
+
+    <section class="advantages">
+      <h1 class="advantages__title">
+        Преимущества компании
+      </h1>
+
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--quality">
+          <span class="advantages__name">
+            Качество продукта
+          </span>
+
+          <button class="advantages__button button-list" type="button" title=" Открыть описание">
+            <span class="visually-hidden">
+              Открыть описание
+            </span>
+          </button>
+
+          <div class="advantages__wrapper">
+            <p class="advantages__text">
+              Мы гордимся результатами своей работы! Мы убеждены, что именно качество — это самое главное, это то,
+              что даёт Нам уверенность в завтрашнем дне.
+            </p>
+          </div>
+        </li>
+
+        <li class="advantages__item advantages__item--popularity">
+          <span class="advantages__name">
+            Популярность бренда в сети
+          </span>
+
+          <button class="advantages__button button-list" type="button" title=" Открыть описание">
+            <span class="visually-hidden">
+              Открыть описание
+            </span>
+          </button>
+
+          <div class="advantages__wrapper">
+            <p class="advantages__text">
+              Мы занимаем высокие позиции в поисковой выдаче иимеем многочисленные отзывы, привлекающие новых заказчиков
+              независимо от времени года.
+            </p>
+          </div>
+        </li>
+
+        <li class="advantages__item advantages__item--workplace">
+          <span class="advantages__name">
+            Передовое рабочее место
+          </span>
+
+          <button class="advantages__button button-list" type="button" title=" Открыть описание">
+            <span class="visually-hidden">
+              Открыть описание
+            </span>
+          </button>
+
+          <div class="advantages__wrapper">
+            <p class="advantages__text">
+              Комфортный офис в центре г. Санкт-Петербург, оборудованный передовыми технологиями. Твой рабочий компьютер
+              может быть даже в твоём смартфоне!
+            </p>
+          </div>
+        </li>
+
+        <li class="advantages__item advantages__item--training">
+          <span class="advantages__name">
+            Свои автоматизированные системы обучения
+          </span>
+
+          <button class="advantages__button button-list" type="button" title=" Открыть описание">
+            <span class="visually-hidden">
+              Открыть описание
+            </span>
+          </button>
+
+          <div class="advantages__wrapper">
+            <p class="advantages__text">
+              Создали и постоянно улучшаем собственные автоматизированные системы обучения специалистов и повышения
+              их квалификации внутри компании.
+            </p>
+          </div>
+        </li>
+
+        <li class="advantages__item advantages__item--cooperation">
+          <span class="advantages__name">
+            Сотрудничество с ведущими Компаниями рынка
+          </span>
+
+          <button class="advantages__button button-list" type="button" title=" Открыть описание">
+            <span class="visually-hidden">
+              Открыть описание
+            </span>
+          </button>
+
+          <div class="advantages__wrapper">
+            <p class="advantages__text">
+              Сотрудничаем с ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна
+              Петербурга», «КраскиДоски», «Technonicol» и другими.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="products-company">
+      <h1 class="products-company__title">
+        Продукты компании
+      </h1>
+
+      <div class="products-company__wrapper">
+        <a class="products-company__link products-company__link--current" href="#">
+          Бани
+        </a>
+
+        <a class="products-company__link" href="#">
+          Дома
+        </a>
+      </div>
+
+      <div class="swiper swiper--products-company">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--products-company"></div>
+
+          <div class="swiper-slide swiper-slide--products-company"></div>
+
+          <div class="swiper-slide swiper-slide--products-company"></div>
+
+          <div class="swiper-slide swiper-slide--products-company"></div>
+
+          <div class="swiper-slide swiper-slide--products-company"></div>
+        </div>
+
+        <div class="swiper-button-prev swiper-button-prev--products-company"></div>
+        <div class="swiper-button-next swiper-button-next--products-company"></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </section>
+
+    <section class="career">
+      <h1 class="career__title">
+        Карьерный рост
+      </h1>
+
+      <div class="career__description-wrapper">
+        <p class="career__description career__description--first">
+          Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются по карьерной
+          лестнице.
+        </p>
+
+        <p class="career__description career__description--second">
+          Мы ценим стремление к развитию<br> и предоставляем все необходимые<br> для этого условия.
+        </p>
+      </div>
+
+      <div class="swiper swiper--career">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--career">
+            <div class="career__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/oleg-vorobiev-desctop.webp 1x, img/oleg-vorobiev-desctop@2x.webp 2x">
+
+                <source type="image/webp" srcset="img/oleg-vorobiev.webp 1x, img/oleg-vorobiev@2x.webp 2x">
+
+                <source media="(min-width: 1440px)"
+                  srcset="img/oleg-vorobiev-desctop.png 1x, img/oleg-vorobiev-desctop@2x.png 2x">
+
+                <img class="career__image" src="img/oleg-vorobiev.png" width="240" height="240"
+                  srcset="img/oleg-vorobiev@2x.png 2x" alt="Олег Воробьёв.">
+              </picture>
+            </div>
+
+            <div class="career__box">
+              <div class="career__wrapper">
+                <span class="career__name">
+                  Олег Воробьёв
+                </span>
+
+                <span class="career__job">
+                  Прораб
+                </span>
+              </div>
+
+              <ul class="career__list">
+                <li class="career__item">
+                  <p class="career__text">
+                    В Компании с 2018 года. Начал с позиции плотника в строительной бригаде.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    В течение года работы Олег стал бригадиром и был приглашён в офис Компании на должность штатного
+                    Производителя строительных работ.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    На данный момент в Его подчинении находятся 9 строительных бригад. Олег вносит весомый вклад в
+                    итоговый
+                    результат Компании, а это реализация 100 объектов в год!
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--career">
+            <div class="career__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/maria-obyhova-desctop.webp 1x, img/maria-obyhova-desctop@2x.webp 2x">
+
+                <source type="image/webp" srcset="img/maria-obyhova.webp 1x, img/maria-obyhova@2x.webp 2x">
+
+                <source media="(min-width: 1440px)"
+                  srcset="img/maria-obyhova-desctop.png 1x, img/maria-obyhova-desctop@2x.png 2x">
+
+                <img class="career__image" src="img/maria-obyhova.png" width="216" height="240"
+                  srcset="img/maria-obyhova@2x.png 2x" alt="Мария Обухова.">
+              </picture>
+            </div>
+
+            <div class="career__box">
+              <div class="career__wrapper">
+                <span class="career__name">
+                  Мария Обухова
+                </span>
+
+                <span class="career__job">
+                  Руководитель финансовой службы
+                </span>
+              </div>
+
+              <ul class="career__list">
+                <li class="career__item">
+                  <p class="career__text">
+                    В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный сотрудник, получил
+                    ответственную должность Логиста.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    Через год Даниил занял должность Специалиста службы снабжения, взяв на себя помимо закупа материала
+                    ещё и крайне важную роль Сметчика.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="swiper-slide swiper-slide--career">
+            <div class="career__image-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp"
+                  srcset="img/danil-basenko-desctop.webp 1x, img/danil-basenko-desctop@2x.webp 2x">
+
+                <source type="image/webp" srcset="img/danil-basenko.webp 1x, img/danil-basenko@2x.webp 2x">
+
+                <source media="(min-width: 1440px)"
+                  srcset="img/danil-basenko-desctop.png 1x, img/danil-basenko-desctop@2x.png 2x">
+
+                <img class="career__image" src="img/danil-basenko.png" width="204" height="240"
+                  srcset="img/danil-basenko@2x.png 2x" alt="Даниил Басенков.">
+              </picture>
+            </div>
+
+            <div class="career__box">
+              <div class="career__wrapper">
+                <span class="career__name">
+                  Даниил Басенков
+                </span>
+
+                <span class="career__job">
+                  Менеджер по снабжению
+                </span>
+              </div>
+
+              <ul class="career__list">
+                <li class="career__item">
+                  <p class="career__text">
+                    В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный сотрудник, получил
+                    ответственную должность Логиста.
+                  </p>
+                </li>
+
+                <li class="career__item">
+                  <p class="career__text">
+                    Через год Даниил занял должность Специалиста службы снабжения, взяв на себя помимо закупа материала
+                    ещё и крайне важную роль Сметчика.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev swiper-button-prev--career"></div>
+        <div class="swiper-button-next swiper-button-next--career"></div>
+      </div>
+    </section>
+
+    <section class="aside">
+      <h1 class="aside__title">
+        Наши успехи — это заслуга замечательных людей, работающих в нашей Команде.
+      </h1>
+
+      <p class="aside__subtitle">
+        У нас всегда есть вакансии для сильных кандидатов
+      </p>
+
+      <div class="aside__wrapper">
+        <p class="aside__text">
+          Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом<br> с Нами!
+        </p>
+
+        <button class="aside__button button-section" type="button">
+          Присоединиться к команде
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer">
+    <div class="page__footer-wrapper">
+      <section class="contacts">
+        <h1 class="contacts__title">
+          Контакты
+        </h1>
+
+        <div class="contacts__wrapper">
+          <a class="contacts__link contacts__link--city contacts__link--current contacts__link--saint-petersburg"
+            href="#">
+            Санкт-Петербург
+          </a>
+
+          <a class="contacts__link contacts__link--city contacts__link--moscow" href="#">
+            Москва
+          </a>
+        </div>
+
+        <address class="contacts__info-wrapper">
+          <a class="contacts__link-info contacts__link-info--phone" href="tel:88888888888" target="_blank">
+            8 (888) 888-88-88
+          </a>
+
+          <a class="contacts__link-info contacts__link-info--email" href="mailto:build@info.ru" target="_blank">
+            build@info.ru
+          </a>
+
+          <a class="contacts__link-info contacts__link-info--address" href="#" target="_blank">
+            ул. Партизанская, д. 9 к. 3а, офис 105<br> (7 мин. пешком от метро Фрунзенская)
+          </a>
+        </address>
+
+        <ul class="contacts__social social">
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <svg class="social__icon social__icon--youtube" width="50" height="35">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--vkontacte" href="#">
+              <svg class="social__icon social__icon--vkontacte" width="41" height="41">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <svg class="social__icon social__icon--telegram" width="41" height="41">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <iframe class="company-location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.502194572185!2d30.320700941765253!3d59.90721246473487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696305afcfeac39%3A0x848525066d77d20b!2z0JfQsNC-0LfRkdGA0L3QsNGPINGD0LsuLCA4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTYwODQ!5e0!3m2!1sru!2sby!4v1718120889868!5m2!1sru!2sby"
+        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="footer">
+      <p class="footer__text">
+        © 2023 Building together. Все права защищены.
+      </p>
+
+      <a class="footer__requisites" href="#" target="_blank">
+        Реквизиты
+      </a>
+
+      <a class="footer__politics" href="#" target="_blank">
+        Политика конфиденциальности
+      </a>
+
+      <a class="footer__developer" href="https://github.com/lazab13" title="Github верстальщика">
+        𝑰𝒍𝒚𝒂 𝑩𝒐𝒓𝒐𝒉
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main-nav.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/popover.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/profession.js"></script>
+  <script src="js/advantages.js"></script>
+</body>
+
+</html>

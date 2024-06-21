@@ -1,0 +1,227 @@
+.career {
+  padding: 43px 20px 47px;
+
+  @media (min-width: $desctop-width) {
+    padding: 70px 50px;
+  }
+}
+
+.career__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-another;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.career__description-wrapper {
+  margin-bottom: 34px;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 1145px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+  }
+}
+
+.career__description {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    position: relative;
+    font-size: 19px;
+    line-height: 25px;
+    padding-top: 16px;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 91px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.career__description--first {
+  margin-bottom: 16px;
+
+  @media (min-width: $desctop-width) {
+    width: 562px;
+    margin: 0;
+    padding-left: 114px;
+
+    &::before {
+      background-image: url("../img/career-description-first-icon.svg");
+      width: 73px;
+      left: 11px;
+    }
+  }
+}
+
+.career__description--second {
+  @media (min-width: $desctop-width) {
+    width: 483px;
+    padding-left: 113px;
+
+    &::before {
+      background-image: url("../img/career-description-second-icon.svg");
+      width: 87px;
+    }
+  }
+}
+
+.career__description--second br {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.career__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: $desctop-width) {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 168px;
+    height: 80px;
+    rotate: 335deg;
+    background-color: rgba(54, 133, 59, 0.52);
+    top: 25%;
+    filter: blur(34px);
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 12px;
+    background-image: url("../img/career-image-element.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    z-index: -1;
+
+    @media (min-width: $desctop-width) {
+      display: none;
+    }
+  }
+}
+
+.career__image {
+  @media (min-width: $desctop-width) {
+    width: 436px;
+    aspect-ratio: 1;
+  }
+}
+
+.career__box {
+  @media (min-width: $desctop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 604px;
+  }
+}
+
+.career__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.career__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+
+.career__job {
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 19px;
+    line-height: 25px;
+  }
+}
+
+.career__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 21px;
+  list-style: none;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    gap: 20px;
+    padding-right: 0;
+    padding-left: 48px;
+  }
+}
+
+.career__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 9px;
+    left: -12px;
+
+    @media (min-width: $desctop-width) {
+      width: 6px;
+      height: 6px;
+      top: 10px;
+      left: -15px;
+    }
+  }
+}
+
+.career__text {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    font-size: 19px;
+    line-height: 25px;
+  }
+}

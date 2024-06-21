@@ -1,0 +1,273 @@
+.form--closed {
+  display: flex;
+  transform: scale(0.2);
+  transition: all 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.form--opened {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow-y: auto;
+  transform: scale(1);
+  transition: all 0.2s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__box {
+  position: relative;
+  background-color: $backgroud-color-another;
+  max-width: 360px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.form__title {
+  text-align: center;
+  color: $color-text-another;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.form__toogle {
+  position: absolute;
+  background-color: $backgroud-color;
+  padding: 0;
+  border: 0;
+  width: 20px;
+  height: 13px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 17px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.form__user-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 0;
+  outline: none;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__user-name,
+.form__user-phone {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-text-another;
+  background-color: $backgroud-color-another;
+  padding: 15px 10px;
+  outline: none;
+  border: 0;
+  border-bottom: 3px solid #999999;
+
+  &:hover {
+    background-color: $backgroud-color;
+    border-color: #ffffff;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px #999999 inset;
+  }
+}
+
+.form__select-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $backgroud-color;
+    width: 13px;
+    height: 10px;
+    border: 10px solid transparent;
+    border-radius: 4px;
+    border-top: 10px solid #ffffff;
+    top: 44px;
+    right: 0;
+    visibility: visible;
+  }
+}
+
+.form__select-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.form__select-vacancy {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-text-another;
+  background-color: $backgroud-color-another;
+  padding: 15px 10px;
+  padding-right: 20px;
+  outline: none;
+  appearance: none;
+  border: 0;
+  border-bottom: 3px solid #999999;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $backgroud-color;
+    border-color: #ffffff;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px #999999 inset;
+  }
+}
+
+.form__resume {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.form__resume-title {
+  margin: 0;
+}
+
+.form__resume-text {
+  font-size: 10px;
+  line-height: 15px;
+  width: 257px;
+  margin: 0;
+}
+
+
+.form__resume-label {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 36px;
+  border-radius: 30px;
+  background-color: $color-green;
+  width: 189px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: $btn-bg-color;
+  }
+}
+
+.form__poltics {
+  margin-bottom: 35px;
+}
+
+.form__politics-label {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+
+.form__politics-text,
+.form__politics-user-age {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.form__politics-text {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #d9d9d933;
+    border: 0.5px solid #ffffff80;
+    border-radius: 3px;
+    top: 0;
+    left: -17px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    top: 3px;
+    left: -14px;
+  }
+}
+
+.form__politics-input:checked + .form__politics-text::after {
+  display: block;
+}
+
+.form__politics-input:focus + .form__politics-text::before {
+  border-color: #ffffff;
+}
+
+.form__button {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $desctop-width) {
+    font-size: 14px;
+    line-height: 15px;
+    width: 237px;
+  }
+}

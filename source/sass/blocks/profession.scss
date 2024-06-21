@@ -1,0 +1,211 @@
+.profession {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 29px;
+  border: 3px solid #999999;
+  border-radius: 30px;
+
+  @media (min-width: $desctop-width) {
+    width: 51.73vw;
+    padding: 17px 45px;
+  }
+}
+
+.profession__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 227px;
+
+  @media (min-width: $desctop-width) {
+    gap: 22px;
+    width: 600px;
+  }
+}
+
+.profession__title {
+  position: relative;
+  margin: 0;
+  padding-left: 35px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 27px;
+    line-height: 30px;
+    padding-top: 13px;
+    padding-left: 55px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/profession-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+
+    @media (min-width: $desctop-width) {
+      background-size: 24px;
+      width: 40px;
+      height: 40px;
+      top: 8px;
+      left: -4px;
+    }
+  }
+}
+
+.profession__salary {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-green;
+  padding-left: 35px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/profession-icon-ruble.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: -1px;
+    left: -2px;
+
+    @media (min-width: $desctop-width) {
+      background-size: 24px;
+      width: 40px;
+      height: 40px;
+      top: 4px;
+      left: -4px;
+    }
+  }
+}
+
+.profession__salary--logist {
+  text-transform: none;
+
+  @media (min-width: $desctop-width) {
+    font-size: 27px;
+  }
+}
+
+.profession__salary--logist br {
+  @media (min-width: $desctop-width) {
+    display: none;
+  }
+}
+
+.profession__button {
+  position: absolute;
+  right: 27px;
+  top: 50px;
+
+  @media (min-width: $desctop-width) {
+    right: 42px;
+    top: 57px;
+  }
+}
+
+.profession__button--another {
+  top: 61px;
+
+  @media (min-width: $desctop-width) {
+    top: 56px;
+  }
+}
+
+.profession__button--active {
+  &::before {
+    rotate: 48deg;
+  }
+
+  &::after {
+    rotate: 133deg;
+  }
+}
+
+.profession__tasks {
+  position: relative;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  top: 15px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+.profession__tasks-title {
+  display: block;
+  margin-bottom: 14px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.profession__tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.profession__tasks-item {
+  position: relative;
+  padding-left: 11px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 7px;
+    left: 0;
+
+    @media (min-width: $desctop-width) {
+      height: 6px;
+      width: 6px;
+      top: 8px;
+    }
+  }
+}

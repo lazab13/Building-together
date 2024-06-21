@@ -1,0 +1,26 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: $gothampro;
+  color: $color-text;
+  background-color: $backgroud-color;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__footer-wrapper {
+  @media (min-width: $desctop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 86px 50px 50px;
+  }
+}

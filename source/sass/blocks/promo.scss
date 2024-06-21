@@ -1,0 +1,61 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  padding: 271px 20px 45px;
+  background-image: url("../img/promo-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg@2x.webp");
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 345px 167px 101px;
+    background-image: url("../img/promo-bg-desctop.webp");
+    background-position: 0 -172px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-desctop@2x.webp");
+    }
+  }
+}
+
+.promo__title {
+  font-size: 29px;
+  line-height: 124%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 64px;
+    line-height: 65px;
+    margin-bottom: 26px;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 27px;
+    margin-bottom: 45px;
+  }
+}
+
+.promo__button {
+  max-width: 200px;
+  align-self: center;
+  line-height: 30px;
+
+  @media (min-width: $desctop-width) {
+    max-width: 304px;
+  }
+}

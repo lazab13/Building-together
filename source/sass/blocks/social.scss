@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 58.3vw;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $desctop-width) {
+    width: 18.4vw;
+    margin: 0;
+  }
+}
+
+.social__link {
+  display: block;
+}
+
+.social__icon {
+  fill: #999999;
+}
+
+.social__icon--youtube:hover {
+  fill: #ff0201;
+}
+
+.social__icon--vkontacte:hover {
+  fill: #0077fe;
+}
+
+.social__icon--telegram:hover {
+  fill: #26a4e5;
+}

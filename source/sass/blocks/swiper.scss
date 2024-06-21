@@ -1,0 +1,153 @@
+.swiper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper--products-company {
+  max-width: 360px;
+  margin-bottom: 42px;
+
+  @media (min-width: $desctop-width) {
+    max-width: 1440px;
+    margin-bottom: 45px;
+  }
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide--products-company.swiper-slide-active {
+  max-width: 165px;
+  min-height: 182px;
+  border-radius: 10px;
+  border: 5px solid #888988;
+  background-color: #d9d9d9;
+  margin-left: 98px;
+  margin-right: 150px;
+
+  @media (min-width: $desctop-width) {
+    max-width: 637px;
+    min-height: 437px;
+    border: 10px solid #888988;
+    border-radius: 27px;
+    margin-left: 400px;
+    margin-right: 0;
+  }
+}
+
+.swiper-slide--career {
+  @media (min-width: $desctop-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 79px;
+    padding-right: 145px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 87%;
+      height: 16px;
+      background-image: url("../img/career-image-element.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 71px;
+      bottom: 1px;
+      z-index: -1;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: relative;
+  height: 20px;
+
+  @media (min-width: $desctop-width) {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  background-color: #888988;
+
+  &:focus {
+    box-shadow: 0 0 0 1px #ffffff inset;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $desctop-width) {
+    width: 71px;
+    height: 25px;
+    border-radius: 25px;
+  }
+}
+
+.swiper-button-prev--products-company {
+  left: 8px;
+
+  @media (min-width: $desctop-width) {
+    top: 209px;
+    left: 47px;
+  }
+}
+
+.swiper-button-next--products-company {
+  right: 8px;
+
+  @media (min-width: $desctop-width) {
+    top: 209px;
+    right: 49px;
+  }
+}
+
+.swiper-button-prev--career {
+  top: 120px;
+  left: -6px;
+
+  @media (min-width: $desctop-width) {
+    top: 198px;
+    left: -3px;
+  }
+}
+
+.swiper-button-next--career {
+  top: 120px;
+  right: -6px;
+
+  @media (min-width: $desctop-width) {
+    top: 198px;
+    right: -1px;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 29px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 40px;
+  }
+}

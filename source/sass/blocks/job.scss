@@ -1,0 +1,111 @@
+.job {
+  display: flex;
+  flex-direction: column;
+  padding: 41px 20px 45px;
+  background-color: $backgroud-color-another;
+
+  @media (min-width: $desctop-width) {
+    align-items: center;
+    padding: 70px 210px;
+  }
+}
+
+.job__title {
+  text-transform: uppercase;
+  text-align: left;
+  color: $color-text-another;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $desctop-width) {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 43px;
+  }
+}
+
+.job__nav {
+  margin-bottom: 33px;
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.job__department-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desctop-width) {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.job__department-link {
+  display: block;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-link;
+  padding: 0 16px;
+  border: 3px solid #999999;
+  border-radius: 5px;
+  transition: all 0.2s;
+
+  @media (min-width: $desctop-width) {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 32px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    color: #212121;
+    background-color: #999999;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px #ffffff inset;
+  }
+}
+
+.job__department-link--current {
+  color: #212121;
+  background-color: #999999;
+}
+
+.job__list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $desctop-width) {
+    gap: 45px;
+    margin-bottom: 45px;
+  }
+}
+
+.job__button {
+  align-self: center;
+  width: 263px;
+
+  @media (min-width: $desctop-width) {
+    width: 426px;
+  }
+}
